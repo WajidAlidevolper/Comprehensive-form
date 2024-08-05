@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="payment form.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment form</title>
+    <style>
+        *{
+            padding: 5px;
+            margin: 3px;
+        }
+
+
+        h1{
+            text-align: center;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif;
+            font-size: 40px;
+         }
+
+         h2{
+            font-size: 31px;
+            font-family:'Courier New', Courier, monospace
+    
+         }
+
+         p{
+            font-size: 20px;
+            font-family:  sans-serif;
+         }
+
+
+    </style>
+    
+</head>
+<body>
+    <form action="" class="container">
+        <h1>PAYMENT FORM</h1>
+     <h2>Contact Information</h2>
+     <p>Name: <input type="text" name="name" requireds></p>
+     <p><fieldset> <legend>Gender </legend>
+        Male <input type="radio" name="gender" id="Male" required> Female <input type="radio" name="gender" id="Female" required>
+        Other <input type="radio" name="gender" id="Other" required></fieldset>
+    
+     </p>
+     
+     <p>Address:  <textarea name="Address" id="Address" cols="80" rows="5" required></textarea></p>
+     <p>Email:  <input type="Email" id="Email" required></p>
+     <p>Pincode: <input type="pincode" id="pincode" required></p>
+     <h2>Payment Information</h2>
+     <p>Card Type: 
+        <select name="Card_type" id="Card_type" required>
+            <option value="">Select a Card Type-</option>
+            <option value="">Visa</option>
+            <option value="">Supercard</option>
+            <option value="">Rupay</option>
+        </select>
+     </p>
+     <p>Card Number:  <input type="number" name="card_number" id="card_number" required></p>
+     <p>Expiration Date:  <input type="date" name="expiration_date" id="expiration_date" required></p>
+     <p>Cvv: <input type="password" name="cvv" id="cvv " required></p>
+     <input type="submit" value="PAY_NOW">
+    </form>
+
+</body>
+</html>
